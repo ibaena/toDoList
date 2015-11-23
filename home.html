@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDo List</title>
+  <meta name="description" content="To Do List">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="navbar navbar-collapse navbar-relative-top navbar-inverse">
+    <h2>2DoList</h2>
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <button href="#collpasetwo" class="btn btn-info" data-toggle="collapse" data-parent="accordion">Add a Task</button>
+        </h4>
+      </div>
+      <div id="collpasetwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <form class="form-group toDoForm">
+            <input class="form-control form-group taskTitle" type="text" placeholder="Title" />
+            <textarea class="form-control form-group description" placeholder="Description"></textarea>
+            <input class="form-control form-group date" type="text" placeholder="Due Date (dd/mm/yyyy)" />
+            <button class="btn btn-primary addtask">Add Task</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-cs-12 col-sm-8 col-sm-offset-2">
+        <table class="table table-bordered">
+        <thead>
+          <tr class="info">
+            <td class="col-sm-6 taskInfo">Task</td>
+            <td class="col-sm-1">
+              <p>Complete</p>
+            </td>
+            <td class="col-sm-1">
+              <p>Delete</p>
+            </td>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>

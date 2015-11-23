@@ -1,0 +1,27 @@
+body {
+
+
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  display: inline;
+ 
+}
+
+.btn-info{
+  display: inline-block;
+}
+
+
+
+
+.title{
+  text-align: center;
+}
+
+.checkBox {
+
+  text-align: center;
+}
