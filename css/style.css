@@ -1,14 +1,10 @@
 body {
+  background-color: #F5F8FA;
+  font-style:  Arial,sans-serif;
 
 
 }
 
-.title {
-
-  text-align: center;
-  color: white;
- 
-}
 
 .btn-info{
   display: inline-block;
@@ -19,7 +15,39 @@ body {
   text-align: center;
 }
 
-.taskTitle { 
-  font-weight: bold;
+.panel-heading {
+  display: inline-block;
+}
 
+.panel-body {
+  text-align: center;
+}
+
+.logo {
+  
+  height: 50px;
+  width:125px;
+
+}
+
+.toDoForm {
+  width: 500px;
+
+}
+
+.nameSection {
+  color: #7D757F;
+}
+
+td {
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+td:hover{
+  text-decoration: underline;
+}
+
+hr{
+ border-top: 3px double #8c8b8b;
 }

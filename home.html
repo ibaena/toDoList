@@ -17,12 +17,12 @@
 
 <body>
   <header>
-    <div class="navbar navbar-collapse navbar-relative-top navbar-inverse">
-      <h2 class="title">2DoList</h2>
-      <div class="panel-heading">
-          <button href="#collpasetwo" class="btn btn-info" data-toggle="collapse" data-parent="accordion">Add a Task</button>
+    <div class="navbar navbar-collapse navbar-relative-top navbar-default">
+      <a href="home.html"><img src="img/doneLogo.png" class="pull-left logo"></a>
+      <div class="panel-heading pull-right">
+          <button href="#collpasetwo" class="btn btn-info pull-right" id="open" data-toggle="collapse" data-parent="accordion">Add a Task</button>
       </div>
-      <div id ="collpasetwo" class="panel-collapse collapse">
+      <div id ="collpasetwo" class="panel-collapse collapse pull-right">
         <div class="panel-body">
           <form class="form-group toDoForm">
             <input class="form-control form-group taskTitle" type="text" placeholder="Title" />
@@ -37,9 +37,9 @@
   <div class="container">
     <div class="row">
       <div class="col-cs-12 col-sm-8 col-sm-offset-2">
-        <table class="table table-bordered">
+        <table class="table table-hover">
           <thead>
-            <tr class="info">
+            <tr class="nameSection">
               <td class="col-sm-6 taskInfo">Task</td>
               <td class="col-sm-1">
                 <p>Complete</p>
