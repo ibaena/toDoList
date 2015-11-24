@@ -30,6 +30,7 @@ $(document).ready(function() {
       newRow.append(deleteTd);
       $("tbody").append(newRow);
 
+
       //Clear input text afetr submit
       $(".taskTitle,.description,.date").val("");
       // alert("hey do i work");

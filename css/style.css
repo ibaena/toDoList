@@ -60,3 +60,10 @@ td:hover{
 hr{
  border-top: 1px dotted #8c8b8b;
 }
+
+h5{
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  left: 20px;
+}
