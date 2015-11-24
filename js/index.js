@@ -9,7 +9,7 @@ $(document).ready(function() {
     var taskDescription = $('.description').val();
     var taskDate = $('.date').val();
     var newRow = $("<tr>");
-    var wordTd = $("<td>").append(inputTask).append(taskDescription).append(taskDate);
+    var wordTd = $("<td>").append(inputTask + "<br>" + taskDescription + "<br>" +taskDate +"</td>");
     var deleteBtn = $("<button>").append("Delete");
     var deleteTd = $("<td>").append(deleteBtn);
     var completeBtn = $("<input>").append("Complete")
@@ -32,22 +32,22 @@ $(document).ready(function() {
     // alert("hey do i work");
   });
 
-//delete button function
-$("table").on("click",".btn-danger", function(){
+  //delete button function
+  $("table").on("click", ".btn-danger", function() {
     $(this).parent().parent().remove();
+  });
 
-
-});
-
-//checkbox to create strikethrough
-
-    
-$("table").on("click",".checkBox", function(){
-    $('.checkBox').prop('checked',".checkBox");
+  //checkbox to create strikethrough and then remove   
+  $("table").on("click", ".checkBox", function(e) {
+    e.preventDefault();
+    //$('.checkBox').prop('checked',".checkBox");
     //alert("yes!!");
     $(this).parent().parent().css("text-decoration", "line-through");
     $(this).remove();
-});
+  });
+
+
+
 
 
 });
